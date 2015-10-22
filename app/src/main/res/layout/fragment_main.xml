@@ -1,17 +1,105 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                xmlns:tools="http://schemas.android.com/tools"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:paddingLeft="@dimen/activity_horizontal_margin"
-                android:paddingRight="@dimen/activity_horizontal_margin"
-                android:paddingTop="@dimen/activity_vertical_margin"
-                android:paddingBottom="@dimen/activity_vertical_margin"
-                tools:showIn="@layout/activity_main"
-                tools:context=".MainActivityFragment">
+<ScrollView
+    android:id="@+id/ScrollView01"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/launcherBackground"
+    >
 
-    <TextView
-        android:text="Hello World!"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="@dimen/activity_vertical_margin"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingRight="@dimen/activity_horizontal_margin"
+                    android:paddingTop="@dimen/activity_vertical_margin"
+                    tools:context=".MainActivityFragment"
+                    tools:showIn="@layout/activity_main"
+        >
 
-</RelativeLayout>
+        <TextView
+            android:id="@+id/welcomeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_margin="@dimen/launcher_margin"
+            android:text="@string/launcherWelcome"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            />
+
+        <Button
+            android:id="@+id/spotifyStreamerButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/welcomeText"
+            android:layout_alignLeft="@+id/welcomeText"
+            android:layout_alignParentEnd="false"
+            android:layout_alignRight="@+id/welcomeText"
+            android:layout_alignStart="@+id/welcomeText"
+            android:layout_below="@+id/welcomeText"
+            android:layout_marginBottom="@dimen/launcher_margin"
+            android:background="@color/lessonAppButton"
+            android:text="@string/spotifyStreamer"
+            />
+
+
+        <Button
+            android:id="@+id/superDuoButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/spotifyStreamerButton"
+            android:layout_alignLeft="@+id/spotifyStreamerButton"
+            android:layout_alignRight="@+id/spotifyStreamerButton"
+            android:layout_alignStart="@+id/spotifyStreamerButton"
+            android:layout_below="@+id/spotifyStreamerButton"
+            android:layout_marginBottom="@dimen/launcher_margin"
+            android:background="@color/lessonAppButton"
+            android:text="@string/superDuo"
+            />
+
+        <Button
+            android:id="@+id/buildItBiggerButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/superDuoButton"
+            android:layout_alignLeft="@+id/superDuoButton"
+            android:layout_alignRight="@+id/superDuoButton"
+            android:layout_alignStart="@+id/superDuoButton"
+            android:layout_below="@+id/superDuoButton"
+            android:layout_marginBottom="@dimen/launcher_margin"
+            android:background="@color/lessonAppButton"
+            android:text="@string/buildItBigger"
+            />
+
+        <Button
+            android:id="@+id/xyzReaderButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/buildItBiggerButton"
+            android:layout_alignLeft="@+id/buildItBiggerButton"
+            android:layout_alignRight="@+id/buildItBiggerButton"
+            android:layout_alignStart="@+id/buildItBiggerButton"
+            android:layout_below="@+id/buildItBiggerButton"
+            android:layout_marginBottom="@dimen/launcher_margin"
+            android:background="@color/lessonAppButton"
+            android:text="@string/xyzReader"
+            />
+
+        <Button
+            android:id="@+id/capstoneButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/xyzReaderButton"
+            android:layout_alignLeft="@+id/xyzReaderButton"
+            android:layout_alignRight="@+id/xyzReaderButton"
+            android:layout_alignStart="@+id/xyzReaderButton"
+            android:layout_below="@+id/xyzReaderButton"
+            android:layout_marginBottom="@dimen/launcher_margin"
+            android:background="@color/customAppButton"
+            android:text="@string/capstone"
+            />
+
+    </RelativeLayout>
+</ScrollView>

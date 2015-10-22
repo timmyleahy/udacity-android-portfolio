@@ -1,4 +1,11 @@
 <resources>
-    <string name="app_name">Portfolio</string>
+    <string name="app_name">My App Portfolio</string>
     <string name="action_settings">Settings</string>
+    <string name="launcherWelcome">My Nandodegree Apps!</string>
+    <string name="spotifyStreamer">Spotify Streamer</string>
+    <string name="superDuo">Super Duo</string>
+    <string name="buildItBigger">Build It Bigger</string>
+    <string name="xyzReader">XYZ Reader</string>
+    <string name="capstone">Capstone</string>
+    <string name="toastMessage">This button will launch my %s app!</string>
 </resources>
